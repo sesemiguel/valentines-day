@@ -1,0 +1,138 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hideme {
+  opacity: 0;
+}
+
+.full-page-with-text-dark {
+  height: 100%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.full-page-with-text-light {
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.full-page-with-text-red {
+  height: 100%;
+  text-align: center;
+  background-color: #ff6747;
+  color: #fff;
+}
+
+.full-page-with-text-gradient {
+  text-align: center;
+  height: 3000px; /* Used to enable scrolling */
+  background: linear-gradient(30deg, #ff577f 0%, #ff884b 51%, #ffc764 85%);
+}
+
+.full-page-with-text-dark h1,
+.full-page-with-text-light h1,
+.full-page-with-text-red h1,
+.full-page-with-text-gradient h1 {
+  padding: 22.5% 15% 5% 15%;
+  margin: 0px;
+  font-size: 4em;
+  font-family: monospace;
+}
+
+.full-page-with-text-gradient h1 {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+a.button2-dark {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+}
+a.button2-dark:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+a.button2-dark:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+@media all and (max-width: 30em) {
+   a.button2-dark {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+a.button2-light {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #000;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  transition: all 0.15s;
+}
+a.button2-light:hover {
+  color: #444444;
+  border-color: #444444;
+}
+a.button2-light:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+@media all and (max-width: 30em) {
+   a.button2-light {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
